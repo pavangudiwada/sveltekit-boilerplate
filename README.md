@@ -36,3 +36,17 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+
+## Configuring Auth.js
+
+Run the following to create an authentication secret. Full [procedure](https://authjs.dev/getting-started/installation?framework=sveltekit)
+
+```bash
+npx auth secret
+```
+This will create a `AUTH_SECRET` environment variable in `.env` folder with a secret. This is a random value used by the library to encrypt tokens and email verification hashes.
+
+## DaisyUI
+
+Add themes in ``tailwind.config.ts``. Pick the default theme in ``app.html``.
